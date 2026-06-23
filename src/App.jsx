@@ -1,5 +1,6 @@
 import logo from './assets/logo.png';
-
+import circleImg from  './assets/circle.png';
+import wormy from './assets/wormhole.png';
 function App() {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden"
@@ -9,7 +10,16 @@ function App() {
 
       {/* Logo */}
       <img src={logo} className="absolute top-5 left-[60px] w-[100px]" />
-
+      <img
+        src={circleImg}
+        alt="Circle"
+        className="absolute right-0  bottom-0 w-64"
+      />
+      <img
+        src={wormy}
+        alt="Wormhole"
+        className="absolute left-0 bottom-0 w-64"
+      />
       {/* Navbar */}
       <nav className="absolute top-8 left-1/2 -translate-x-1/2">
         <div className="flex gap-8 px-8 py-4 bg-white/[0.08] backdrop-blur-xl border border-white/15 rounded-[20px] shadow-[0_8px_32px_rgba(0,0,0,0.3),inset_0_1px_1px_rgba(255,255,255,0.1)]">
